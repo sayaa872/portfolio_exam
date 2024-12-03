@@ -12,7 +12,7 @@ const textLinks: { label: string; href: string }[] = [
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
-const iconLinks = [
+const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths; download?: boolean }[] = [
   {
     label: "CV",
     href: "/mudryk-jardin-theo-cv.pdf", // Assurez-vous que le fichier est dans public/
