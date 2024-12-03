@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="Veille | Théo Mudryk--Jardin"
+  description="Veille de Théo Mudryk--Jardin"
+>
+  <div class="stack gap-20 centered-div">
+    <main class="wrapper about">
+      <Hero
+        title="Veille techno sur l'IA en cancérologie"
+        tagline="L'intelligence artificielle au service de la lutte contre le cancer"
+      >
+        <img width="1553" height="873" src="/assets/at-work.png" alt="" />
+      </Hero>
+
+      <section>
+        <h2 class="section-title">Résumé</h2>
+        <div class="content">
+          <p>
+            L'intégration de l'IA dans la lutte contre le cancer améliore la
+            détection précoce, le diagnostic, la personnalisation et
+            l'optimisation des traitements, ainsi que le suivi des patients. Des
+            algorithmes analysent des images médicales pour repérer les signes
+            de cancer, prédisent la réponse aux traitements et aident à
+            concevoir des plans de thérapie personnalisés. L'IA est également
+            utilisée en recherche de nouveaux médicaments. Google Health a
+            développé un modèle d'IA qui analyse les mammographies pour détecter
+            les signes de cancer du sein.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <ContactCTA />
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>

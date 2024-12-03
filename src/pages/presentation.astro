@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout
+  title="Veille | Théo Mudryk--Jardin"
+  description="Veille de Théo Mudryk--Jardin"
+>
+  <div class="stack gap-20 centered-div">
+    <main class="wrapper about">
+      <Hero title="Présentation" />
+
+      <section>
+        <h2 class="section-title">Ipssi</h2>
+        <div class="content">
+          <p>
+            L'IPSSI, est une
+            école spécialisée dans les domaines du numérique, de l'informatique
+            et du digital. Elle propose des formations diplomante de Bac+2 à
+            Bac+5 en alternance ou en initial. L'école propose deux cursus
+            différent pour son bts, Slam et Sisr. <br />
+            SISR, Solutions d’infrastructures, système et réseaux te permet d’acquérir
+            les compétences pour installer, configurer, maintenir et administrer
+            des réseaux informatiques et t’apprend les bases de la cybersécurité.
+            <br />
+            SLAM, solutions logicielles et applications métier, te permet de devenir
+            développeur et d’acquérir les compétences de gestion des applications
+            software, web ou mobile.
+          </p>
+        </div>
+        <h2 class="section-title">Santor Edition</h2>
+        <div class="content">
+          <p>
+            Santor Edition, 1er éditeur de presse médicale indépendant 100%
+            digital, couvre depuis 1998 l’actualité nationale et internationale.
+            Depuis plus de 20 ans, sous l’égide du site mediscoop.net, Santor
+            Edition informe les praticiens sur l’actualité scientifique mondiale
+            pour une amélioration constante de la prise en charge des patients.
+            La communauté mediscoop.net réunit plus de 220 000 membres
+            professionnels de santé francophones avec la volonté de fédérer tous
+            les acteurs de santé concernés par des thématiques ou pathologies
+            communes. <br />
+            mediscoop.net offre une information scientifique prospective de très
+            haut niveau avec des contenus originaux traités exclusivement par des
+            experts praticiens aux formats digitaux innovants et interactifs.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <ContactCTA />
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
