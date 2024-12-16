@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Tableau de synthèse" description="Tableau de synthèse des compétences BTS SIO">
+  <div class="stack gap-20">
+    <main class="wrapper stack gap-8">
+      <header>
+        <h1 class="title">Tableau de synthèse</h1>
+      </header>
+      
+      <div class="content">
+        <a href="/assets/tableau.xlsx" class="download-button" target="_blank">
+          Voir mon tableau de synthèse
+        </a>
+      </div>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .title {
+    font-size: var(--text-2xl);
+    color: var(--gray-0);
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+
+  .download-button {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+    background: var(--gradient-accent);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-md);
+  }
+
+  .download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+</style>
