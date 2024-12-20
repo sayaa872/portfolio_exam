@@ -4,18 +4,16 @@ publishDate: 2024-03-14
 img: /assets/gsblogo.png
 img_alt: Logo GSB
 description: |
-  Gestion et suivi de ticket
+    industrie pharmaceutique spécialisé dans la recherche et la production de molécule et de médicament
 tags:
-  - Suivi de ticket
-  - My SQL
+  - Dev
+  - Api
 ---
 
 Fonctionnalités principales:
-- Création et suivi des tickets
-- Attribution des tickets aux techniciens
-- Gestion des statuts et priorités
-- Interface utilisateur intuitive en WPF
-- Base de données SQL Server pour le stockage
+- Commande de médicament
+- Suivi de prise de traitement
+- 
 
 ## Voir le code source
 
