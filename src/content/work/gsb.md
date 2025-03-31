@@ -17,6 +17,14 @@ Fonctionnalités principales:
 
 ## Voir le code source
 
-<a href="https://github.com/votre-username/projet" target="_blank">
+<a href="https://github.com/OvBd1/AP3" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-Voir_sur_GitHub-blue?logo=GitHub" alt="Voir sur GitHub">
 </a>
+
+### Documentation
+
+![Page panier GSB](/assets/page_cart_gsb.png)
+
+![Page produit GSB](/assets/page_product_gsb.png)
+
+![Documentation GSB](/assets/documentation_gsb.png)

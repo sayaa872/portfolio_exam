@@ -1,18 +1,16 @@
 ---
-title: Meal API
+title: Installation serveur apache et PHP
 publishDate: 2019-12-01 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/apache.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
 description: |
-  Ce vite va nous permettre de rechercher des images de plats puis de les mettres en favoris.
+  Mise en place d'un serveur web sur linux avec Apache et PHP
 tags:
-  - Dev
-  - Api
+  - Apache
+  - Linux
 ---
 
-Ce site web est une plateforme où l'on peut rechercher des images de plats en utilisant une barre de recherche. Vous pouvez saisir le nom d'un plat et obtenir une sélection d'images correspondantes. De plus, il est possible de sauvegarder les images pour les consulter ultérieurement.
-
-Le site a été créé en utilisant JavaScript et HTML, avec l'intégration d'une API pour récupérer les images en fonction des termes de recherche saisis par les utilisateurs.
+déployer un serveur web Apache sur un système Linux afin d’assurer l’hébergement et l’accessibilité de sites internet. Apache, en tant que serveur HTTP, gère les requêtes des utilisateurs et transmet les pages web demandées. L’installation et la configuration incluaient l’optimisation des performances, la mise en place de paramètres de sécurité et la vérification du bon fonctionnement du service. Cette mise en place garantit un hébergement stable et efficace.
 
 ## Voir le code source
 
