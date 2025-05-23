@@ -8,12 +8,28 @@ description: |
 tags:
   - Dev
   - Api
+  - PHP
+  - MySQL
 ---
 
-Fonctionnalités principales:
-- Commande de médicament
-- Suivi de prise de traitement
-- 
+## Présentation du projet
+
+GSB (Galaxy Swiss Bourdin) est une entreprise pharmaceutique spécialisée dans la recherche et la production de molécules et médicaments innovants. J'ai développé une application web permettant aux visiteurs médicaux  de gérer eficacement les commandes.
+
+## Fonctionnalités principales
+
+- Commande de médicaments en ligne avec interface intuitive
+- Interface administrateur pour les professionnels de santé
+- Système de notification
+- Authentification sécurisée des utilisateurs
+
+## Technologies utilisées
+
+- Backend: PHP, MySQL
+- Frontend: HTML, CSS, JavaScript
+- Architecture MVC
+- API RESTful pour la communication client-serveur
+- Système de sécurité avancé pour la protection des données médicales
 
 ## Voir le code source
 
@@ -21,7 +37,7 @@ Fonctionnalités principales:
   <img src="https://img.shields.io/badge/GitHub-Voir_sur_GitHub-blue?logo=GitHub" alt="Voir sur GitHub">
 </a>
 
-### Documentation
+### Captures d'écran
 
 ![Page panier GSB](/assets/page_cart_gsb.png)
 

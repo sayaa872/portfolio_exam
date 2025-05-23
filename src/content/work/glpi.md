@@ -22,12 +22,6 @@ GLPI (Gestionnaire Libre de Parc Informatique) est un outil open-source de gesti
 - Inventaire automatisé du parc informatique
 - Rapports et statistiques
 
-## Voir le code source
-
-<a href="https://github.com/sayaa872/meal_api" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub" alt="Voir sur GitHub">
-</a>
-
 ## Documentation
 
 <div style="text-align: center; margin: 2rem 0;">
